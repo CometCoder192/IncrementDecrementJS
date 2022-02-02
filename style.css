@@ -1,0 +1,71 @@
+
+
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+	user-select: none;
+} 
+
+#mainHeader, #value, .btnDiv {
+	text-align: center;
+}
+
+#mainHeader {
+	font-family: 'Century Gothic', monospace;
+	font-size: 4rem;
+	color: #ff009d;
+	text-shadow: 0.2rem 0.3rem cyan;
+	animation-name: colorChanger;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorChanger {
+	0% {
+	color: #ff009d;
+	text-shadow: 0.2rem 0.3rem cyan;
+	}
+	25% {
+	text-shadow: -0.5rem 0.3rem darkblue;
+	}
+	50% {
+	text-shadow: 0.2rem 0.3rem cyan;
+	}
+	75% {
+	text-shadow: 0.8rem 0.3rem darkblue;
+	}
+	100% {
+	color: #ff009d;
+	text-shadow: 0.2rem 0.3rem cyan;
+	}
+
+}
+
+#value {
+	margin-top: 10rem;
+	font-size: 3rem;
+}
+.btn {
+	border: none;
+	padding: 2rem;
+	border-radius: 1rem;
+	font-family: monospace;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	opacity: 0.7;
+	color: white;
+	transition: 0.3s;
+}
+.increase:hover {
+	background-color: green;
+}
+.reset:hover {
+	background-color: black;
+}
+.decrease:hover {
+	background-color: red;
+}
